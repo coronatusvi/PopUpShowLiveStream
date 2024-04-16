@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <button id="live-stream-button">Xem trực tiếp</button>
+    <script src="https://www.nimo.tv/sdk/embed-player-0.5.0.min.js"></script>
+    <div id="SamplePlayerDivID"></div>
+    <script type="text/javascript">
+        var options = {
+            width: 900,
+            height: 400,
+            resourceId: 615236228
+        };
+        var player = new NimoTV.Player("SamplePlayerDivID", options);
+        player.play();
+    </script>
+    <div id="popup" class="popup-container">
+        <!-- https://live.nimo.tv/lZoSt -->
+
+        <!-- <div id="live-stream-video"></div> -->
+    </div>
+</body>
+
+</html>
